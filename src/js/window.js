@@ -23,13 +23,13 @@ var chartOptions = {
 };
 
 var marksData = {
-  labels: ["CE", "CD", "Q", "AD", "P", "T", "SS"],
+  labels: ["Coding Excellence", "Continuous Delivery", "Quality", "Architecture & Design", "Process", "Teamwork", "Soft skills"],
   datasets: [{
-    label: "huguinho",
+    label: "eduardobp",
     backgroundColor: "rgba(200,0,0,0.2)",
     data: [2.20, 2.05, 2.20, 1.00, 2.95, 2.50, 3.00]
   }, {
-    label: "ze",
+    label: "oelze",
     backgroundColor: "rgba(0,0,200,0.2)",
     data: [2.90, 2.45, 2.20, 2.25, 2.25, 1.25, 2.10]
   }]

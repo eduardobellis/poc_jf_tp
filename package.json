@@ -1,8 +1,6 @@
 {
-  "name": "activity-monitor",
+  "name": "poc_jf_tp",
   "version": "1.0.0",
-  "description": "CPU activity monitor",
-  "repository": "electron/simple-samples",
   "main": "app.js",
   "scripts": {
     "start": "electron app.js"

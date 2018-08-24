@@ -9,9 +9,9 @@ app.once('ready', () => {
   // Create a new window
   window = new BrowserWindow({
     // Set the initial width to 500px
-    width: 500,
+    width: 1024,
     // Set the initial height to 400px
-    height: 400,
+    height: 800,
     // set the title bar style
     titleBarStyle: 'hidden-inset',
     // set the background color to black
