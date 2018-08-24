@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>JF TechPress</title>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="./src/css/bootstrap.min.css">
+	<!--link rel="stylesheet" href="./src/css/styles.css"-->
+	<script src="./src/js/Chart.bundle.js"></script>
+	<script src="./src/js/utils.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="width:70%" class="container-fluid">
+		<canvas id="canvas"></canvas class="Chart">
+	</div>
+	<button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<button id="addData">Add Data</button>
+	<button id="removeData">Remove Data</button>
+	<script src="./src/js/control_chart.js"></script>
+</body>
+
+</html>

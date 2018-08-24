@@ -15,13 +15,13 @@ app.once('ready', () => {
     // set the title bar style
     titleBarStyle: 'hidden-inset',
     // set the background color to black
-    backgroundColor: "#111",
+    //backgroundColor: "#111",
     // Don't show the window until it's ready, this prevents any white flickering
     show: false
   })
 
   window.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'index2.html'),
     protocol: 'file:',
     slashes: true
   }))
