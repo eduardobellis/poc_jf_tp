@@ -1,5 +1,5 @@
 var randomScalingFactor = function() {
-    return Math.round(Math.random() * 10);
+    return Math.round(Math.random() * 7);
 };
 var color = Chart.helpers.color;
 var config = {
