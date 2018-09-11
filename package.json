@@ -10,6 +10,7 @@
     "electron": "^1.4.12"
   },
   "dependencies": {
-    "chart.js": "^2.7.2"
+    "chart.js": "^2.7.2",
+    "googleapis": "^27.0.0"
   }
 }

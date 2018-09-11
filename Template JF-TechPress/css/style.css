@@ -1,0 +1,286 @@
+.container {
+   max-width: 1440px;
+   height: 6020px;
+   margin: 0 auto;
+   background-color: #f8f8f8;
+}
+
+.paper {
+  position: absolute;
+  top: 158px;
+  left: 270px;
+  width: 900px;
+  height: 5570px;
+  background-color: #ffffff;
+}
+
+.mainbanner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 590px;
+  object-fit: contain;
+  background-color: #1f2021;
+}
+
+.search {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.dropdown {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 28px;
+    height: 18px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f2021;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.user-photo {
+  position: absolute;
+  left: 46px;
+  top: 61px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: solid 0px #000;
+  background-color: white;
+  box-shadow: 1px 1px  rgba(0,0,0,0.1);
+  -moz-box-shadow: 1px 1px  rgba(0,0,0,0.1);
+  -webkit-box-shadow: 1px 1px  rgba(0,0,0,0.1);
+  -o-box-shadow: 1px 1px  rgba(0,0,0,0.1);
+  border-radius:200px;
+}
+
+.user-name {
+  position: absolute;
+  left: 299.5px;
+  top: 63px;
+  width: 450px;
+  height: 37px;
+  font-family: 'Raleway';
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  color: #27282b;
+}
+
+.user-info {
+  position: absolute;
+  left: 299px;
+  top: 105px;
+  width: 350px;
+  height: 19px;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  color: #e05a75;
+}
+
+.user-location {
+  position: absolute;
+  top: 143px;
+  left: 325px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+}
+
+.user-email {
+  position: absolute;
+  top: 169px;
+  left: 300px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+}
+
+.user-contact {
+  position: absolute;
+  top: 190px;
+  left: 300px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+}
+
+.user-coach {
+  position: absolute;
+  top: 143px;
+  left: 325px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+}
+
+.user-pdm {
+  position: absolute;
+  top: 143px;
+  left: 325px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+
+}
+
+.user-bp {
+  position: absolute;
+  top: 143px;
+  left: 325px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+}
+
+.user-area {
+  position: absolute;
+  top: 143px;
+  left: 325px;
+  width: 300px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #27282b;
+}
+
+.btn-chat-internal {
+  position: absolute;
+  top: 198px;
+  left: 213px;
+  width: 38px;
+  height: 38px;
+  background-color: #262728;
+  border-radius:200px;
+}
+
+.btn-chat-external {
+  position: absolute;
+  top: 200px;
+  left: 215px;
+  width: 38px;
+  height: 38px;
+  background-color: #e05a75;
+  border-radius:200px;
+}
+
+.icon-chat {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 18px;
+  height: 16px;
+}
+
+.icon-location {
+  position: absolute;
+  top: 143px;
+  left: 299px;
+  width: 16px;
+  height: 17px;
+  object-fit: contain;
+}
+
+.bio-title {
+  position: absolute;
+  top: 363px;
+  left: 0px;
+  width: 900px;
+  height: 100px;
+  background-blend-mode: multiply;
+  background-image: linear-gradient(to bottom, #f6f6f6, rgba(255,255,255,0));
+}
+
+.bio-text {
+  position: absolute;
+  left: 41px;
+  top: 41px;
+  width: 193px;
+  height: 41px;
+  font-family: Raleway;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+  color: #e05a75;
+}
