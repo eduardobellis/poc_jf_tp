@@ -3,7 +3,12 @@
 
 <head>
     <title> JF Tech Press</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
 </head>
 
 <body>
@@ -20,35 +25,50 @@
         <img src="img/search.png" srcset="img/search@2x.png 2x,
             img/search@3x.png 3x" class="search">
         <div class="paper">
-            <img src="img/user.png" srcset="img/user@2x.png 2x,
+            <div>
+                <img src="img/user.png" srcset="img/user@2x.png 2x,
                         img/user@3x.png 3x" class="user-photo">
-            <p class="user-name">Gus Lamounier</p>
-            <div class="user-info">a</div> 
-              
-              <div class="user-location">b</div> 
-              
-              <div class="user-email">c</div>
-              <div class="user-contact">d</div>
-              
-              <div class="user-coach">e</div> 
-              
-              <div class="user-pdm">f</div> 
-              
-              <div class="user-bp">g</div> 
-              
-              <div class="user-area">h</div> 
-              
-              <div class="btn-chat-internal">1</div> 
-              
-              <div class="btn-chat-external">2</div> 
-              
-              <div class="icon-chat">3</div>
-              
-              <div class="icon-location">4</div> 
-              
-              <div class="bio-title">5</div> 
-              
-              <div class="bio-text">6</div> 
+                <img src="img/icon-chat.png" srcset="img/icon-chat@2x.png 2x,
+                        img/icon-chat@3x.png 3x"
+                    class="icon-chat">
+
+                <p class="user-name">Gus Lamounier</p>
+                <p class="user-info">
+                    <u>UI Designer</u>
+                    <font color="black"> at </font>
+                    <u>Orion</u>
+                </p>
+                <img src="img/icon-location.png" srcset="img/icon-location@2x.png 2x,
+                img/icon-location@3x.png 3x"
+                    class="icon-location">
+                <p class="user-location">Belo Horizonte, MG / Brazil</p>
+
+                <div id="chartjs-radar">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+                <script src="js/control_chart.js"></script>
+
+                <!-- <p class="user-email">c</p>
+                <p class="user-contact">d</p>
+
+                <p class="user-coach">e</p>
+
+                <p class="user-pdm">f</p>
+
+                <p class="user-bp">g</p>
+
+                <p class="user-area">h</p> -->
+
+                <p class="btn-chat-external"></p>
+                <p class="btn-chat-internal"></p>
+
+
+                <!-- 
+                <p class="bio-title">5</p>
+
+                <p class="bio-text">6</p> -->
+            </div>
         </div>
     </div>
 </body>
