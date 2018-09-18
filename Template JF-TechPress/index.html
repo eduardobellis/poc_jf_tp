@@ -6,12 +6,13 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!-- Include the AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
-
 </head>
 
-<body>
+<body ng-app="JFMain">
     <div class="WebDesign">
         <img src="img/mask.png" srcset="img/mask@2x.png 2x,
                     img/mask@3x.png 3x" class="mask">
@@ -47,6 +48,15 @@
                     <canvas id="canvas"></canvas>
                 </div>
 
+                <div class="main" ng-controller="MainController">
+                    <div class="container">
+                        <div class="card" ng-repeat="app in apps">
+                            <app-info info="app"></app-info>
+                            <install-app></install-app>
+                        </div>
+                    </div>
+                </div>
+
                 <script src="js/control_chart.js"></script>
 
                 <!-- <p class="user-email">c</p>
@@ -63,14 +73,19 @@
                 <p class="btn-chat-external"></p>
                 <p class="btn-chat-internal"></p>
 
-
-                <!-- 
-                <p class="bio-title">5</p>
-
-                <p class="bio-text">6</p> -->
             </div>
         </div>
     </div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/appInfo.js"></script>
+    <script src="js/directives/installApp.js"></script>
 </body>
 
 </html>
