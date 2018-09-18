@@ -3,7 +3,8 @@ const readline = require('readline');
 const {google} = require('googleapis');
 
 // If modifying these scopes, delete token.json.
-const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
+const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly',
+                'https://www.googleapis.com/auth/drive.metadata.readonly'];
 const TOKEN_PATH = 'token.json';
 
 // Load client secrets from a local file.
@@ -64,11 +65,17 @@ function getNewToken(oAuth2Client, callback) {
 }
 
 /**
- * Prints the names and majors of students in a sample spreadsheet:
- * @see https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
  * @param {google.auth.OAuth2} auth The authenticated Google OAuth client.
  */
 function listMajors(auth) {
+  const drive = google.drive({version: 'v2', auth});
+  drive.files.get({
+    fileId: '1usom8G8knAsMwwBVyndWkzayPkcLh0BJ'
+  }, (err, res) => {
+    if (err) return console.log('Api error: ' + err);
+    const ret = res.data.values;
+    console.log('ok - : ' + ret);
+  });
   const sheets = google.sheets({version: 'v4', auth});
   sheets.spreadsheets.values.get({
     spreadsheetId: '1RBhbOioq7xF-VlCClp4YBF1BBnxU6gODJUSZu1H3pSc',
